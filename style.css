@@ -32,11 +32,11 @@ header h1{
  
 }
 
+
 .container{
-  
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items:center;   
     padding-top: 10%; 
 }
@@ -66,90 +66,16 @@ h1{
 
 }
 
-.div1{
+.square{
+    display: flex;
     background-color:tan;
     align-items: center;
     justify-self: center;
     order: 0;
 }
 
-.div1:hover{
+.square:hover{
     background-color: #fff;
-    border:1px solid tan;
-}
-
-.div2{
-    background-color:tan;
-    order: 1;
-}
-
-.div2:hover{
-    background-color: #fff;
-}
-
-.div3{
-    background-color:tan;
-    order: 2;
-}
-
-.div3:hover{
-    background-color: #fff;
-}
-
-.div4{
-    background-color: tan;
-    order: 3;
-
-}
-
-.div4:hover{
-    background-color: #fff;
-    border:1px solid tan;
-}
-
-.div5{
-    background-color: tan;
-    order: 4;
-}
-
-.div5:hover{
-    background-color: #fff;
-    border:1px solid tan;
-}
-
-.div6{
-    background-color:tan;
-}
-.div6:hover{
-    background-color: #fff;
-    border:1px solid tan;
-}
-
-.div7{
-    background-color:tan;
-}
-
-.div7:hover{
-    background-color: #fff;
-    border:1px solid tan;
-}
-
-.div8{
-    background-color:tan;
-}
-
-.div8:hover{
-    background-color: #fff;
-    border:1px solid tan;
-}
-
-.div9{
-    background-color:tan;
-}
-
-.div9:hover{
-    background-color: #fff;
-    border:1px solid tan;
 }
 
 .powderblue {
@@ -174,4 +100,14 @@ table{
 
 table, tr, th, td {
     border: 1px solid black;
+}
+
+td {
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+.font-size{
+    font-size: 100px;
 }

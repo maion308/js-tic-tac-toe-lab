@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body class="disable-dbl-tap-zoom">
-
+<nav>
+  <li></li>
+</nav>
   <header>
     <h1>
       <span class="green">X</span><span class="red">O</span>
@@ -17,25 +19,25 @@
       <span class="yellow">X</span>
     </h1>
   </header>
+  
 <main class="container">
-    <div>
-        <div  class="div1">
-          <h1 id="square1"></h1>
-        </div>
-        <div id="square2" class="div2">2</div>
-        <div id="square3" class="div3">3</div>
+
+      <div>
+        <div id="square1"  class="square"></div>
+        <div id="square2"class="square"></div>
+        <div id="square3" class="square"></div>
       </div>
         
       <div>
-        <div id="square4" class="div4">4</div>
-        <div id="square5" class="div5">5</div>
-        <div id="square6" class="div6">6</div>
+        <div id="square4" class="square"></div>
+        <div id="square5" class="square"></div>
+        <div id="square6" class="square"></div>
       </div>
         
       <div>
-        <div id="square7" class="div7">7</div>
-        <div id="square8" class="div8">8</div>
-        <div id="square9" class="div9">9</div>
+        <div id="square7" class="square"></div>
+        <div id="square8" class="square"></div>
+        <div id="square9" class="square"></div>
       </div>
 </main>
 <footer>
@@ -47,7 +49,7 @@
           <th>Player 1</th><th>Player 2</th>
         </tr>
         <tr>
-          <th>7</th><th>7</th>
+          <td id="p1score">0</td><td id="p2_score">0</td>
         </tr>
       </table>
 </div>
