@@ -30,7 +30,7 @@ squares.forEach((item)=>{
         item.innerHTML = turn;
         checkWinner();
         count++;
-        play.innerHTML = (turn === "X") ? "It's O'x turn" : "It's X'x turn";
+        play.innerHTML = (turn === "X") ? "It's O's turn" : "It's X's turn";
         }    
     
     })
