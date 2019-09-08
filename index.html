@@ -19,12 +19,13 @@
       <span class="yellow">X</span>
     </h1>
   </header>
-  
-<main class="container">
+  <h1><span id="turn">Play</span></h1>
+  <!-- show X or O on div click -->
 
+<main class="container">
       <div>
-        <div id="square1"  class="square"></div>
-        <div id="square2"class="square"></div>
+        <div id="square1" class="square"></div>
+        <div id="square2" class="square"></div>
         <div id="square3" class="square"></div>
       </div>
         
@@ -53,6 +54,8 @@
         </tr>
       </table>
 </div>
+  <!-- Play Again And Reset All Info -->
+  <button onclick="replay()">Play Again</button>
 </footer>
 
 <script src="./script.js"></script>

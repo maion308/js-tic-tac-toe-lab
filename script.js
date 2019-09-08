@@ -9,46 +9,64 @@ const square8 = document.querySelector("#square8");
 const square9 = document.querySelector("#square9");
 
 const squares = document.querySelectorAll('.square');
-console.log(squares)
+let count = 1;
+
+squares.forEach((item)=>{
+    item.addEventListener('click', ()=>{
+        let turn = (count % 2 === 0) ? "X":"O";
+        item.innerHTML = turn;
+        checkWinner();
+        count++;
+    })
+})
+
+
+// while(count <= squares.length - 1){
+//     let turn = (count % 2 === 0) ? "X":"O";
+//     item.innerHTML = turn;
+//     count++;
+// }
 
 
 // check for winners using switch cases for ever possible win variation
 // using alert just for testing purposes and will replace with return later
+
+function checkWinner(){
 switch(true){
     case (square1.innerHTML !== "" && square1.innerHTML === 
             square2.innerHTML && square1.innerHTML === square3.innerHTML):
-    alert("winner case 1");
+    alert("Game Over: ");
     break;
     case (square1.innerHTML !== "" && square1.innerHTML ===
             square4.innerHTML && square1.innerHTML === square7.innerHTML):
-    alert("winner case 2");
+    console.log("winner case 2");
     break;
     case (square2.innerHTML !== "" && square2.innerHTML ===
     square5.innerHTML && square2.innerHTML === square8.innerHTML):
-    alert("winner case 3");
+    console.log("winner case 3");
     break;
     case (square3.innerHTML !== "" && square3.innerHTML ===
     square6.innerHTML && square3.innerHTML === square9.innerHTML):
-    alert("winner case 4");
+    console.log("winner case 4");
     break;
     case (square4.innerHTML !== "" && square4.innerHTML ===
     square5.innerHTML && square4.innerHTML === square6.innerHTML):
-    alert("winner case 5");
+    console.log("winner case 5");
     break;
     case (square7.innerHTML !== "" && square7.innerHTML ===
     square8.innerHTML && square7.innerHTML === square9.innerHTML):
-    alert("winner case 6");
+    console.log("winner case 6");
     break;
     case (square1.innerHTML !== "" && square1.innerHTML ===
     square5.innerHTML && square1.innerHTML === square9.innerHTML):
-    alert("winner case 7");
+    console.log("winner case 7");
     break;
     case (square3.innerHTML !== "" && square3.innerHTML ===
     square5.innerHTML && square3.innerHTML === square7.innerHTML):
-    alert("winner case 7");
+    console.log("winner case 7");
     break;
     default:
-    alert("keep paying");
+    console.log("keep paying");
     break;
 }
-
+}
