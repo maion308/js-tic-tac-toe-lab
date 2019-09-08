@@ -10,7 +10,11 @@ const square9 = document.querySelector("#square9");
 
 const squares = document.querySelectorAll('.square');
 let count = 1;
+const winner = "player"
 
+function playGame(){
+
+    function startGame(){
 squares.forEach((item)=>{
     item.addEventListener('click', ()=>{
         let turn = (count % 2 === 0) ? "X":"O";
@@ -20,7 +24,7 @@ squares.forEach((item)=>{
     })
 })
 
-
+    }
 // while(count <= squares.length - 1){
 //     let turn = (count % 2 === 0) ? "X":"O";
 //     item.innerHTML = turn;
@@ -35,38 +39,44 @@ function checkWinner(){
 switch(true){
     case (square1.innerHTML !== "" && square1.innerHTML === 
             square2.innerHTML && square1.innerHTML === square3.innerHTML):
-    alert("Game Over: ");
+    alert(`Game Over: ${winner} wins`);
     break;
     case (square1.innerHTML !== "" && square1.innerHTML ===
             square4.innerHTML && square1.innerHTML === square7.innerHTML):
-    console.log("winner case 2");
+            alert(`Game Over: ${winner} wins`);
     break;
     case (square2.innerHTML !== "" && square2.innerHTML ===
     square5.innerHTML && square2.innerHTML === square8.innerHTML):
-    console.log("winner case 3");
+    alert(`Game Over: ${winner} wins`);
     break;
     case (square3.innerHTML !== "" && square3.innerHTML ===
     square6.innerHTML && square3.innerHTML === square9.innerHTML):
-    console.log("winner case 4");
+    alert(`Game Over: ${winner} wins`);
     break;
     case (square4.innerHTML !== "" && square4.innerHTML ===
     square5.innerHTML && square4.innerHTML === square6.innerHTML):
-    console.log("winner case 5");
+    alert(`Game Over: ${winner} wins`);
     break;
     case (square7.innerHTML !== "" && square7.innerHTML ===
     square8.innerHTML && square7.innerHTML === square9.innerHTML):
-    console.log("winner case 6");
+    alert(`Game Over: ${winner} wins`);
     break;
     case (square1.innerHTML !== "" && square1.innerHTML ===
     square5.innerHTML && square1.innerHTML === square9.innerHTML):
-    console.log("winner case 7");
+    alert(`Game Over: ${winner} wins`);
     break;
     case (square3.innerHTML !== "" && square3.innerHTML ===
     square5.innerHTML && square3.innerHTML === square7.innerHTML):
-    console.log("winner case 7");
+    alert(`Game Over: ${winner} wins`);
     break;
     default:
     console.log("keep paying");
     break;
 }
 }
+
+
+startGame();
+}
+
+playGame();
