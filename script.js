@@ -11,16 +11,12 @@ const square8 = document.querySelector("#square8");
 const square9 = document.querySelector("#square9");
 const squares = document.querySelectorAll('.square');
 let play = document.querySelector('#turn');
-let count = 1;
 p1 = document.querySelector('#p1Score');
 p2 = document.querySelector('#p2Score');
+let count = 1;
 x_count = 0;
 o_count = 0;
-
-
-
 squares.innerHTML = ""
-
 
     function startGame(){
 squares.forEach((item)=>{
@@ -32,7 +28,6 @@ squares.forEach((item)=>{
         count++;
         play.innerHTML = (turn === "X") ? "It's O's turn" : "It's X's turn";
         }    
-    
     })
 
 })

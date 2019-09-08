@@ -6,6 +6,7 @@ body{
     margin: 0 auto;
     width: 100%;
     font-family: 'Emilys Candy', cursive;
+    background-color: mistyrose;
 
 }
 
@@ -86,7 +87,7 @@ h1{
 }
 
 .square:hover{
-    background-color: #fff;
+    background-color: cornsilk;
 }
 
 .powderblue {
@@ -141,11 +142,20 @@ button:hover{
 
 .gameWinner{
     background-color: rosybrown;
+    border: 5px solid green;
     font-size: 100px;
     font-family: 'Emilys Candy', cursive;    color: #fff;
     text-align: center;
+    -webkit-transition: border 5s; /* For Safari 3.1 to 6.0 */
+    transition: border 5s;
 }
 caption {
     font-weight: 800;
     font-size: 3rem;
+}
+
+.turn{
+    font-size: 5rem;
+    color: mediumturquoise;
+    font-weight: 800;
 }
