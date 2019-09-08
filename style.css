@@ -67,12 +67,15 @@ h1{
 }
 
 .square{
-    display: flex;
+    /* display: flex;
     background-color:tan;
     align-items: center;
     justify-self: center;
-    order: 0;
-    font-family: 'Courier New', Courier, monospace;
+    order: 0; */
+    background-color:tan;
+    color: #fff;
+    text-align: center;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-size: 100px;
     font-weight: 800;
 }
@@ -117,14 +120,24 @@ td {
 
 button{
     width: 100%;
-    background-color: green;
+    background-color: burlywood;
+    outline: none;
 }
+
+button:active{
+    border: 1px dotted tan;
+    background-color: burlywood;
+}
+
 
 button:hover{
     background-color:pink;
 }
 
 .gameWinner{
-    background-color: green;
+    background-color: rosybrown;
     font-size: 100px;
+    font-family: comic;
+    color: #fff;
+    text-align: center;
 }

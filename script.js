@@ -119,11 +119,13 @@ function callWinner(sq1,sq2,sq3){
         alert("Game Winner: Player X");
         x_count+=1;
         p1.innerHTML = x_count;
+        return x_count;
     }
     else if(sq1.innerHTML === "O"){
-        alert("Game Winner: Player Y");
+        alert("Game Winner: Player O");
         o_count+=1
         p2.innerHTML = o_count;
+        return o_count;
     }
     else{
         alert("Draw");
