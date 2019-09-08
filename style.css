@@ -38,7 +38,7 @@ header h1{
     flex-direction: row;
     justify-content: center;
     align-items:center;   
-    padding-top: 10%; 
+    padding-top: 2%; 
 }
 
 .disable-dbl-tap-zoom {
@@ -72,6 +72,9 @@ h1{
     align-items: center;
     justify-self: center;
     order: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    font-weight: 800;
 }
 
 .square:hover{
@@ -109,5 +112,19 @@ td {
 }
 
 .font-size{
+    font-size: 100px;
+}
+
+button{
+    width: 100%;
+    background-color: green;
+}
+
+button:hover{
+    background-color:pink;
+}
+
+.gameWinner{
+    background-color: green;
     font-size: 100px;
 }
